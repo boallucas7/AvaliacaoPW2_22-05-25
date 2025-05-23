@@ -1,0 +1,32 @@
+1. Como foi feita a integração com a API do ViaCEP?
+Foi feita utilizando a função fetch no JavaScript, que busca os dados do CEP digitado no site ViaCEP.
+Quando o usuário informa o CEP, o sistema preenche automaticamente o endereço com os dados retornados.
+
+2. Como a imagem aleatória foi gerada?
+Não consegui deixar isso funcionando!!
+O sistema deveria geraa a imagem usando o link do site Unsplash. A URL é montada assim: https://source.unsplash.com/160x160/?tema.
+O "tema" é o que o voluntário escolheu no cadastro, e assim a imagem aparece de forma aleatória, relacionada a esse tema.
+
+3. Como você utilizou o LocalStorage?
+O LocalStorage foi usado para salvar os dados dos voluntários diretamente no navegador.
+Quando um voluntário é cadastrado, os dados ficam guardados no LocalStorage e são carregados quando acessamos a lista.
+
+4. Como você organizou os cards na tela?
+Os cards foram organizados usando CSS com flexbox. Isso deixou os cards alinhados lado a lado e com espaçamento.
+Cada voluntário aparece dentro de um card, separado dos outros, com borda, imagem, nome, e-mail e endereço.
+
+5. Como foi implementado o sistema de login e controle de acesso?
+O login funciona com um usuário e senha definidos no próprio código JavaScript. 
+Se os dados digitados estiverem corretos, o usuário acessa o sistema. Se estiverem errados, aparece uma mensagem de erro.
+
+6. Como foi feito o controle de e-mail duplicado?
+Antes de cadastrar, o sistema verifica no LocalStorage se já existe um e-mail igual.
+Se encontrar, mostra uma mensagem de erro e não deixa cadastrar o mesmo e-mail novamente.
+
+7. Como foi implementado o redirecionamento após 5 minutos de inatividade?
+Foi usado um contador com setTimeout. 
+Quando o usuário fica 5 minutos sem mexer no sistema, ele é desconectado automaticamente e volta para a tela de login.
+
+8. O que você faria diferente se fosse um projeto real?
+Se fosse um projeto real, eu criaria um banco de dados online, faria um sistema de login seguro com senhas protegidas, 
+validaria melhor os dados, usaria um backend e faria um design mais profissional e responsivo.

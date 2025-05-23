@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Voluntários</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <button onclick="location.href='index.html'">Início</button>
+    <button onclick="location.href='cadastro.html'">Cadastro</button>
+    <button onclick="location.href='listavoluntarios.html'">Lista de Voluntários</button>
+    <button onclick="location.href='login.html'">Sair</button>
+  </nav>
+
+  <div class="container">
+    <h2>Lista de Voluntários</h2>
+    <input type="text" id="filter" placeholder="Filtrar por nome..." oninput="filtrarVoluntarios()">
+    <button id="clearAll" onclick="limparTudo()">Limpar Todos</button>
+
+    <div id="voluntarios"></div>
+  </div>
+
+  <footer>
+    &copy; 2025 ONG - Todos os direitos reservados.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

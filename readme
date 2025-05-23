@@ -1,0 +1,67 @@
+📑 Plataforma de Cadastro de Voluntários - ONG
+Este projeto é uma plataforma simples para cadastro e gerenciamento de voluntários de uma ONG. Ele foi desenvolvido utilizando HTML, CSS e JavaScript puro, com persistência de dados via LocalStorage.
+
+🚀 Instruções de Execução
+✅ Pré-requisitos
+Navegador atualizado (Google Chrome, Firefox, Edge ou outro).
+
+Não é necessário servidor, banco de dados ou instalação de dependências.
+
+📦 Como executar o projeto:
+Baixe o projeto completo (pasta contendo todos os arquivos).
+
+Mantenha a estrutura de pastas, especialmente a pasta /imagens onde estão armazenadas as fotos usadas no site.
+
+Clique duas vezes no arquivo login.html para abrir no navegador.
+
+Realize o login:
+
+Usuário: admin
+
+Senha: 1234
+
+Após o login, você será redirecionado para a página inicial, onde pode:
+
+Navegar para o cadastro de voluntários.
+
+Consultar a lista de voluntários cadastrados.
+
+📁 Estrutura de Arquivos
+rust
+Copiar
+Editar
+/imagens          -> Pasta com as imagens usadas no site
+index.html         -> Página inicial da ONG
+cadastro.html      -> Página de cadastro de voluntários
+listavoluntarios.html -> Página com a lista de voluntários
+login.html         -> Página de login
+style.css          -> Estilos (CSS) para o site
+script.js          -> Funcionalidades em JavaScript
+README.md          -> Este arquivo com as instruções
+
+💾 Observações Importantes
+Os dados dos voluntários são salvos no LocalStorage do navegador.
+
+Ao limpar o cache ou dados do navegador, os cadastros serão apagados.
+
+A busca de endereços no cadastro é feita através da API pública do ViaCEP.
+
+🛠️ Funcionalidades
+🔒 Login de acesso.
+
+👥 Cadastro de voluntários com:
+
+Nome, Email, Idade, Estado Civil, CEP, Endereço e Motivação.
+
+Validação para não permitir cadastros com emails duplicados.
+
+Busca automática de endereço via CEP.
+
+Geração de foto aleatória conforme o tema escolhido.
+
+📋 Lista de voluntários exibida em cards, com filtro por nome e botão para exclusão.
+
+🌐 Interface responsiva e amigável.
+
+🧡 Contribuição
+Se desejar melhorar este projeto, fique à vontade para contribuir, criar melhorias ou adaptar para sua ONG!

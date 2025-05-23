@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Voluntários</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <button onclick="location.href='index.html'">Início</button>
+    <button onclick="location.href='cadastro.html'">Cadastro</button>
+    <button onclick="location.href='listavoluntarios.html'">Lista de Voluntários</button>
+    <button onclick="location.href='login.html'">Sair</button>
+  </nav>
+
+  <div class="container">
+    <h2>Cadastro de Voluntário</h2>
+    <form onsubmit="addVoluntario(event)">
+      <input type="text" id="nome" placeholder="Nome" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="number" id="idade" placeholder="Idade (mínimo 16)" required min="16">
+      <input type="text" id="estado_civil" placeholder="Estado Civil (opcional)">
+      <input type="text" id="tema" placeholder="Tema de Interesse (Ex.: educação, meio ambiente)" required>
+      <textarea id="motivacao" placeholder="Motivação (opcional)" rows="3"></textarea>
+      <input type="text" id="cep" placeholder="CEP" required onblur="buscarCEP()">
+      <input type="text" id="endereco" placeholder="Endereço" readonly>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 ONG - Todos os direitos reservados.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
