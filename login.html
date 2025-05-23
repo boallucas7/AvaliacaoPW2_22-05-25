@@ -3,20 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login - ONG</title>
+  <title>ONG - Página Inicial</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="login-container">
-    <div class="login-box">
-      <h2>Login</h2>
-      <input type="text" id="user" placeholder="Usuário">
-      <input type="password" id="password" placeholder="Senha">
-      <button onclick="login()">Entrar</button>
+  <nav>
+    <button onclick="location.href='index.html'">Início</button>
+    <button onclick="location.href='cadastro.html'">Cadastro</button>
+    <button onclick="location.href='listavoluntarios.html'">Lista de Voluntários</button>
+    <button onclick="location.href='login.html'">Sair</button>
+  </nav>
+
+  <div class="container index-content">
+    <h1>Bem-vindo à Nossa ONG</h1>
+    <p>Somos uma organização dedicada a causas sociais, ambientais e educacionais.</p>
+    <p>Nosso objetivo é transformar vidas através do trabalho voluntário.</p>
+
+    <div class="galeria">
+      <img src="imagens/comunidade3.webp" alt="Trabalho voluntário">
+      <img src="imagens/ongs.jpg" alt="Ação ambiental">
+      <img src="imagens/solidariedade1.jpg" alt="Educação">
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <footer>
+    &copy; 2025 ONG - Todos os direitos reservados.
+  </footer>
+
 </body>
 </html>
