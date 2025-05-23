@@ -7,7 +7,7 @@ function login() {
   const password = document.getElementById('password').value;
 
   if (user === credenciais.usuario && password === credenciais.senha) {
-    window.location.href = 'index.html';
+    window.location.href = 'login.html';
   } else {
     alert('Usuário ou senha incorretos!');
   }
